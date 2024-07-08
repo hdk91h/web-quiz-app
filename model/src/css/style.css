@@ -1,0 +1,348 @@
+/* css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 920px;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 50px;
+    min-height: 100vh;
+}
+
+.top-nav {
+    display: none;   
+}
+
+.mobile-menu-btn {
+    margin: 0;
+    width: 100%;
+    filter: invert(31%) sepia(0%) saturate(100%) hue-rotate(211deg) brightness(96%) contrast(83%);
+}
+
+.mobile-menu-btn:hover {
+    filter: invert(99%) sepia(4%) saturate(1%) hue-rotate(254deg) brightness(115%) contrast(91%);
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar li {
+    margin: 10px;
+}
+
+.navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.message {
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+
+}
+
+input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* new */
+
+#quiz {
+    max-width: 400px;
+}
+
+#userfilter {
+    width: 25px;
+    height: 25px;
+}
+
+.fragen-box {
+    border: 1px black solid;
+    padding: 6px;
+}
+
+.fragen-anzahl {
+    font-size: 1.15rem;
+}
+
+.fragen-stat {
+    font-size: 1.75rem;
+    color: blue;
+}
+
+.frage {
+    font-size: 1.65rem;
+}
+
+.a-text {
+    font-size: 1.35rem;
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    height: 35px;
+    width: 35px;
+}
+
+.wz-btn {
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    margin: 4px;  
+}
+
+input[type="button"] {
+    
+    height: 100%;
+    padding: 8px;
+    margin: 2px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+
+    font-size: 1.15rem;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  #deckanlegen {
+    margin: 5px 0 50px 0;
+    padding: 5px;
+    width: 160px;
+    height: 85px;
+  }
+
+  #tb-deckanlegen {
+    width: 80%;
+    margin: 0 auto;
+
+    font-size: 1.15rem;
+  }
+
+  .trainingsdatensatz-aw {
+    display: flex;
+    align-items: center;
+  }
+
+  .trainingsdatenanlegen-correctAw {
+    width: 25px;
+    height: 25px;
+  }
+
+  .trainingsdatensatz-lab {
+    margin-left: 15px;
+  }
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+    
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+}
+
+.deck-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.wrapper {
+    max-width: 900px;
+}
+
+#wrapper-filter {
+    display: flex;
+    align-items: center;
+}
+
+#deckname {
+
+}
+
+#catfilter {
+
+}
+
+#tagfilter {
+
+}
+
+.bild {
+    width: 580px;
+    display: flex;
+}
+
+/* fragenkatalog */
+
+#wrapper-fragenkatalog {
+
+}
+
+.box-fragenkatalog {
+    padding: 5px;
+    margin: 5px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    min-width: 365px;
+}
+
+.awWrapper {
+
+}
+
+.fragenkatalog-aw {
+    display: flex;
+    align-items: center;  
+   
+    width: 90%;  
+}
+
+.fragenkatalog-bild {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #tb-deckanlegen {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 0.80rem;
+    }
+
+    #deckanlegen {
+        margin-bottom: 85px;
+    }
+}
+
+@media (min-width: 600px) {
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    #quiz {
+        max-width: 900px;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    .top-nav {
+        display: block;
+    }
+
+    .container {
+        padding: 60px;
+    }
+
+    .box-fragenkatalog {
+
+        min-width: 500px;
+    }
+}
