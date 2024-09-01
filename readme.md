@@ -2,6 +2,8 @@ Final project of the second semester. A quiz app for preparing for exams. Users 
 
 In this project, experience was gained in SQL, PHP, HTML, CSS and JavaScript. Furthermore, both GET and POST APIs were used.
 
+[Demo at haustein.in](https://haustein.in/trainingswebseite-quiz-php)
+
 ![Dashboard](img/dashboard.png)
 
 ![Quiz](img/quiz.png)
